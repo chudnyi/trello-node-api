@@ -27,7 +27,12 @@ declare class TrelloBoard {
     searchCards(boardId: string): Promise<any>;
 
     searchCardsFilter(boardId: string, filter: string): Promise<any>;
+    
+    searchLists(boardId: string): Promise<any>;
 
+    searchListsFilter(boardId: string, filter: string): Promise<any>;
+
+    searchLables(boardId: string): Promise<any>;
 }
 
 declare class TrelloCard {
